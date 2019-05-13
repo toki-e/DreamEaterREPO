@@ -208,20 +208,20 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "S-so small-! Is this a joke? I wonder why this is here.";
+                    thoughtText.text = "S-so small-! Is this a joke? Why did this appear suddenly?";
                 }
 
             }
             else
 
-            if (hit.collider.gameObject.tag == "door" && gemCollected == true)
+            if (hit.collider.gameObject.tag == "door" && gemCollected == true && !barrierDispelled)
             {
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
                     thoughtText.text = "I'll use this.";
                     barrierAnimator.SetTrigger("brokenTrigger");
-                    barrierDispelled = true;
+                    barrierDispelled = true; 
                 }
             }
 
@@ -347,7 +347,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "Is he messing with me? Honestly, we have such a different taste in music.";
+                    thoughtText.text = "Honestly, we have such a different taste in music.";
                 }
 
             }
@@ -449,7 +449,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "W-what happened here? Was there a fight?";
+                    thoughtText.text = "W-what happened here?";
                 }
 
             }
@@ -526,7 +526,7 @@ public class Raycast : MonoBehaviour
 
             }
 
-            if (hit.collider.gameObject.tag == "piano" && objScript.statuesComplete)
+            if (hit.collider.gameObject.tag == "piano" && objScript.statuesComplete && !yellowGemCollected)
             {
 
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
