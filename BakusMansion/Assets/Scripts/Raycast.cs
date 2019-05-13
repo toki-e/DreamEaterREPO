@@ -208,7 +208,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "S-so small-! Is this a joke?";
+                    thoughtText.text = "S-so small-! Is this a joke? I wonder why this is here.";
                 }
 
             }
@@ -249,7 +249,7 @@ public class Raycast : MonoBehaviour
                 }
             }
 
-            if (hit.collider.gameObject.tag == "woodBox")
+            if (hit.collider.gameObject.tag == "woodBox" && !boxObserved)
             {
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
@@ -277,7 +277,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "I don't need to rest anymore right now.";
+                    thoughtText.text = "I don't need to rest right now.";
                 }
 
             }
@@ -403,7 +403,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "Baku's notes about amplifiers. 'Gems that amplify magic. Can help you destroy barriers...'";
+                    thoughtText.text = "Baku's notes about amplifiers. 'Gems that amplify your magic. Can help you to destroy barriers...'";
                 }
 
             }
@@ -413,7 +413,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "What a waste of space. You can't keep me in here forever!";
+                    thoughtText.text = "What a waste of space.";
                 }
 
             }
@@ -449,7 +449,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "W-what happened here?";
+                    thoughtText.text = "W-what happened here? Was there a fight?";
                 }
 
             }
@@ -481,7 +481,7 @@ public class Raycast : MonoBehaviour
                 {
 
                     subTimer = 5;
-                    thoughtText.text = "Baku wouldn't write this on his own wall... That was close.";
+                    thoughtText.text = "Is this Laika's doing? That was close.";
 
 
 
@@ -497,7 +497,7 @@ public class Raycast : MonoBehaviour
                     yellowBarrierAnimator.SetTrigger("yellowBroken");
 
                     subTimer = 5;
-                    thoughtText.text = "It looks like this gate was just an illusion?";
+                    thoughtText.text = "It looks like this gate was just an illusion.";
                     yellowBarrierBroken = true;
 
                     gateAnimator.SetTrigger("gateOpenTrigger");
@@ -621,7 +621,7 @@ public class Raycast : MonoBehaviour
                 {
                  
                     subTimer = 5;
-                    thoughtText.text = "Perfect for display. I wonder what used to sit here.";
+                    thoughtText.text = "Perfect for displaying statues.";
                  
                 }
 
@@ -827,7 +827,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "Nothing's in here. Um, anymore anyway.";
+                    thoughtText.text = "Nothing's in here.";
                 }
 
             }

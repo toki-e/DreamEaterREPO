@@ -60,6 +60,7 @@ TagManager:
   - sword2
   - rippedNote
   - noteOnDelta
+  - wall
   layers:
   - Default
   - TransparentFX
