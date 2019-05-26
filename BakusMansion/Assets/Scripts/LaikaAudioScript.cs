@@ -74,7 +74,7 @@ public class LaikaAudioScript : MonoBehaviour
             Debug.Log("dead");
 
             dead = true;
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
 
         if(timeTillLaika > 30f && safeScript.safe)

@@ -208,7 +208,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "S-so small-! Is this a joke? Why did this appear suddenly?";
+                    thoughtText.text = "Hm. Why did this appear suddenly? I bet I can break it somehow.";
                 }
 
             }
@@ -347,7 +347,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "Honestly, we have such a different taste in music.";
+                    thoughtText.text = "Honestly, I don't much care for this music.";
                 }
 
             }
@@ -357,7 +357,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "I highly doubt he sits and works here.";
+                    thoughtText.text = "I highly doubt anyone sits and works here.";
                 }
 
             }
@@ -367,7 +367,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "The nameplate says 'Adam'.";
+                    thoughtText.text = "The nameplate says 'Adam'. 1 of 3.";
                 }
 
             }
@@ -449,7 +449,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "W-what happened here?";
+                    thoughtText.text = "W-what happened here? Does it have anything to do with that noise I heard earlier?";
                 }
 
             }
@@ -481,7 +481,7 @@ public class Raycast : MonoBehaviour
                 {
 
                     subTimer = 5;
-                    thoughtText.text = "Is this Laika's doing? That was close.";
+                    thoughtText.text = "This looks like Laika's doing. That was close.";
 
 
 
@@ -621,7 +621,7 @@ public class Raycast : MonoBehaviour
                 {
                  
                     subTimer = 5;
-                    thoughtText.text = "Perfect for displaying statues.";
+                    thoughtText.text = "Perfect for displaying small objects.";
                  
                 }
 
@@ -666,7 +666,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "Hm. It's not working...";
+                    thoughtText.text = "It's not working...";
                 }
 
             }
@@ -827,7 +827,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "Nothing's in here.";
+                    thoughtText.text = "Nothing's inside.";
                 }
 
             }
@@ -837,7 +837,7 @@ public class Raycast : MonoBehaviour
                 if (Input.GetKey(interactKey) || Input.GetMouseButton(0))
                 {
                     subTimer = 5;
-                    thoughtText.text = "I wonder what's downstairs...";
+                    thoughtText.text = "I wonder what's going on downstairs...";
                     laikaBarrierAnimator.SetTrigger("laikaBarrierBroken");
 
                     laikaBarrierBroken = true;
@@ -927,6 +927,11 @@ public class Raycast : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene(2);
+        }
+
+        if (Input.GetKey(KeyCode.Return))
         {
             SceneManager.LoadScene(0);
         }
